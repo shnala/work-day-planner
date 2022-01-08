@@ -54,11 +54,12 @@ const saveForm = function(event) {
 
 }
 
-
+//TODO: This successfully pulls the string from local storage, but doesn't append the text
+//to the form. Once it is functional I will run a getItem for every timeslot on the page.
 function pullForm() {
     var nineText = localStorage.getItem("formNine");
     console.log(nineText);
-    nine.text = nineText
+    nine.value = nineText.value;
 
 }
 
